@@ -27,6 +27,7 @@ import com.avairebot.imagegen.colors.ranks.PikachuColors;
 import com.avairebot.imagegen.colors.ranks.PurpleColors;
 import com.avairebot.shared.ExitCodes;
 
+import javax.annotation.Nullable;
 import java.lang.reflect.InvocationTargetException;
 import java.util.EnumMap;
 
@@ -58,6 +59,16 @@ public enum RankBackgrounds {
         this.id = id;
         this.file = file;
         this.instance = instance;
+    }
+
+    @Nullable
+    public static RankBackgrounds fromId(int id) {
+        for (RankBackgrounds background : values()) {
+            if (background.getId() == id) {
+                return background;
+            }
+        }
+        return null;
     }
 
     /**
