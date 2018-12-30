@@ -48,14 +48,14 @@ public class VoteCommand extends Command {
 
     @Override
     public String getDescription() {
-        return "Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Ava <3";
+        return "Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Clara <3";
     }
 
     @Override
     public List<String> getUsageInstructions() {
         return Arrays.asList(
-            "`:command check` - Checks if you have voted for Ava in the last 12 hours.",
-            "`:command` - Displays the invite link to Ava, or tells you when your vote expires."
+            "`:command check` - Checks if you have voted for Clara in the last 12 hours.",
+            "`:command` - Displays the invite link to Clara, or tells you when your vote expires."
         );
     }
 
@@ -84,7 +84,7 @@ public class VoteCommand extends Command {
         }
 
         String note = String.format(String.join("\n", Arrays.asList(
-            "You'll gain access to the `!volume` and `!default-volume` commands for the",
+            "You'll gain access to the `c!volume` and `c!default-volume` commands for the",
             "next 24 hours, as well as getting a vote point, rewards for vote points is",
             "coming soon!",
             "",
@@ -98,14 +98,14 @@ public class VoteCommand extends Command {
         }
 
         context.makeSuccess(String.join("\n", Arrays.asList(
-            "Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Ava ❤",
+            "Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Clara ❤",
             "",
-            "https://discordbots.org/bot/avaire",
+            "https://discordbots.org/bot/465010060284788746",
             "",
             ":note"
         )))
             .set("note", note)
-            .setTitle("Vote for AvaIre on DBL", "https://discordbots.org/bot/avaire")
+            .setTitle("Vote for Clara on DBL", "https://discordbots.org/bot/465010060284788746")
             .setFooter("You have " + (voteEntity == null ? 0 : voteEntity.getVotePoints()) + " vote points")
             .queue();
 
