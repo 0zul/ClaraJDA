@@ -100,7 +100,7 @@
       "description": "This is the time in minutes that the bot should wait before disconnecting if no one is listening to the bot.",
 	  "required": false,
 	  "value": "5"
-  
+  },
     "CLARA_MUSIC_ACTIVITY_EMPTY_QUEUE_TIMEOUT": {
       "description": "This is the time in minutes that the bot should wait before disconnecting if the queue is empty and nothing is added before the timer runs out.",
 	  "required": false,
